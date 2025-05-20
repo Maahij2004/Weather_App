@@ -20,10 +20,10 @@ pipeline {
             steps {
                 script {
                     echo "🔨 Building frontend image: ${FRONTEND_IMAGE}:${VERSION}"
-                    docker.build("${FRONTEND_IMAGE}:${VERSION}", '--no-cache ./client')
+                    docker.build("${FRONTEND_IMAGE}:${VERSION}", '--no-cache ./Front')
 
                     echo "🔨 Building backend image: ${BACKEND_IMAGE}:${VERSION}"
-                    docker.build("${BACKEND_IMAGE}:${VERSION}", '--no-cache ./server')
+                    docker.build("${BACKEND_IMAGE}:${VERSION}", '--no-cache ./Server')
                 }
             }
         }
