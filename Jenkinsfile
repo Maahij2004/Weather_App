@@ -12,7 +12,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 echo "📥 Cloning repository..."
-                git branch: 'main', credentialsId: 'github_cred', url: 'https://github.com/Ragu162004/KN-Stores.git'
+                git branch: 'main', credentialsId: 'github_cred', url: 'https://github.com/Maahij2004/Weather_App.git'
             }
         }
 
